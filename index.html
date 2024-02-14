@@ -1,0 +1,1314 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoopla</title>
+    <!-- css File -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Desktop -->
+    <link rel="stylesheet" href="desktop.css">
+    <!-- mini tab -->
+    <link rel="stylesheet" href="miniTab.css">
+    <!-- tablet css -->
+    <link rel="stylesheet" href="tablet.css">
+
+    <!-- Mobile -->
+    <link rel="stylesheet" href="mobile.css">
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Font Awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat:wght@200;300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&family=Raleway:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <!--  -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat:wght@200;300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&family=Questrial&family=Raleway:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap"
+        rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cookie&family=Montserrat:wght@200;300;400;500;600;700;800&family=Poppins:wght@300;400;500;600;700;800&family=Questrial&family=Raleway:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&family=Work+Sans:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- JS File -->
+    <script src="script.js"></script>
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <div class="header">
+        <nav class="navbar navbar-expand-lg navbar-light col-md-12">
+            <div class="container-fluid">
+                <!-- <a class="navbar-brand" href="#">Zoopla</a> -->
+                <a class="navbar-brand col-9 col-sm-5 col-md-6 col-lg-1 " href="#">
+                    <svg width="110" height="20" viewBox="0 0 110 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g xmlns="http://www.w3.org/2000/svg" clip-path="url(#a)">
+                            <path class="_1c2upjc0"
+                                d="M100.02 16.06c-3.27 0-5.82-2.28-5.82-6.06 0-3.68 2.41-6.09 5.82-6.09 3.6 0 5.98 2.63 5.98 6.12a5.76 5.76 0 0 1-5.98 6.03ZM78.7 19.44h11.29v-3.57h-7.3V.56h-4v18.88ZM68.29 12.5a4.18 4.18 0 0 1-4.35-4.37 4.22 4.22 0 0 1 4.35-4.37c2.55 0 4.42 1.72 4.42 4.37 0 2.66-1.87 4.37-4.42 4.37Zm-8.34 6.95h4v-6.76a5.94 5.94 0 0 0 5.5 3.36c3.93 0 7.23-3.25 7.23-7.92S73.38.18 69.44.18c-2.41 0-4.4 1.2-5.5 3.36v-3h-4v18.9Zm-11.78-3.32c-3.33 0-5.93-2.4-5.93-6.07 0-3.7 2.6-6.2 5.93-6.2 3.33 0 5.87 2.5 5.87 6.2 0 3.68-2.54 6.07-5.87 6.07Zm.03 3.7c5.71 0 9.87-3.97 9.87-9.77 0-5.79-4.16-9.87-9.87-9.87-5.72 0-9.96 4.08-9.96 9.87 0 5.8 4.24 9.77 9.96 9.77Zm-21.44-3.7c-3.32 0-5.9-2.4-5.9-6.07 0-3.7 2.58-6.2 5.9-6.2 3.33 0 5.9 2.5 5.9 6.2 0 3.68-2.57 6.07-5.9 6.07Zm.03 3.7c5.71 0 9.87-3.97 9.87-9.77 0-5.79-4.16-9.87-9.87-9.87-5.71 0-9.95 4.08-9.95 9.87 0 5.8 4.24 9.77 9.95 9.77ZM.48 19.44h15.5v-3.57H4.77c.1-2.81 2.12-3.56 4.4-4.34 3.13-1.07 6.76-2.44 6.76-9.55V.56H.53V4.1h11.16c-.1 2.65-2.07 3.35-4.3 4.1C4.24 9.28.49 10.64.49 18v1.44Zm98.82.38a7.53 7.53 0 0 0 6.7-3.65v3.27h4V.56h-4V3.8A7.51 7.51 0 0 0 99.3.18c-5 0-9.12 4.1-9.12 9.82 0 5.72 4.13 9.82 9.12 9.82Z">
+                            </path>
+                        </g>
+                    </svg>
+                </a>
+
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"><p class="Menu">Menu</p></span>
+                </button> -->
+
+                <nav role="navigation" class="navigation" id="hamburger-input" for="hamburger-input">
+
+                    <div id="menuToggle" class="">
+                        <input type="checkbox" class="hamburgerCheckbox" />
+
+
+                        <div class="sign" >
+                            <span class="First"></span>
+                            <span class="second"></span>
+                            <span class="third"></span>
+
+
+                        </div>
+
+                        <p class="Menu">Menu</p>
+                        <div id="overlay"></div>
+                        <ul id="menu" class="menu">
+                            <div class="close-btn" >
+                                <i class="fa-solid fa-xmark cross_sign p-3" onclick="closehamburger()"></i>
+                            </div>
+                            <div class="scroll">
+                                <a href="#">
+                                    <li class="ham">For sale</li>
+                                </a>
+                                <a href="#">
+                                    <li class="ham">To rent</li>
+                                </a>
+                                <a href="#">
+                                    <li class="ham">New homes</li>
+                                </a>
+                                <a href="#">
+                                    <li class="ham">House prices</li>
+                                </a>
+                                <a href="#">
+                                    <li class="ham"> Agent valuation</li>
+                                </a>
+                                <a href="#">
+                                    <li class="ham">Instant valuation</li>
+                                </a>
+                                <a href="#">
+                                    <li class="ham">Account </li>
+                                </a>
+                                <a href="#">
+                                    <li class="below-account"> </li>
+                                </a>
+                                <a href="#">
+                                    <li class="ham">Sign in </li>
+                                </a>
+                            </div>
+                        </ul>
+
+                    </div>
+                </nav>
+
+
+                <div class="collapse navbar-collapse col-md-7 col-lg-7" id="navbarSupportedContent">
+                    <ul class="navbar-nav col me-auto  mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">For sale</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">To rent</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">New homes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">House prices</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Agent valuation</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Instant valuation</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="d-flex col col-md-3 pl-3 hader">
+                    <div class=" text-center header-btn">
+                        <a href="#">
+                            <i class="fa-solid fa-house tab-icon"></i>
+                            <p>My Home</p>
+                        </a>
+                    </div>
+                    <div class=" header-btn text-center">
+                        <a href="#"><i class="fa-regular fa-heart tab-icon"></i>
+                            <p>Saved</p>
+                        </a>
+                    </div>
+                    <div class=" text-center header-btn">
+                        <a href="#"><i class="fa-regular fa-circle-user tab-icon"></i>
+                            <p> Sign in</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </div>
+
+    <!-- Banner section -->
+    <div class="banner">
+        <div class="banner-overlay"></div>
+        <div class="banner-text col-12 pb-2 col-sm-12 col-md-11 col-lg-10">
+            <p class="banner-title">We know what a home is really worth</p>
+            <p class="banner-heading">Find homes to buy or rent and check house prices</p>
+            <div class="search-form">
+                <p class="mobile-title">We know what a home is really worth</p>
+                <p class="mobile-heading">Find homes to buy or rent and check house prices</p>
+                <div class="col d-flex justify-content-center">
+                    <div class="d-flex align-items-start">
+                        <div class="nav d-flex nav-pills me-3 flex-row" id="v-pills-tab" role="tablist"
+                            aria-orientation="vertical">
+                            <button class="nav-link active sale-active sale" id="v-pills-home-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                                aria-selected="true">For sale</button>
+                            <button class="nav-link sale" id="v-pills-profile-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-profile" type="button" role="tab"
+                                aria-controls="v-pills-profile" aria-selected="false">To rent</button>
+                            <button class="nav-link sale" id="v-pills-messages-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-messages" type="button" role="tab"
+                                aria-controls="v-pills-messages" aria-selected="false">New-build</button>
+                            <button class="nav-link sale" id="v-pills-messages-tab" data-bs-toggle="pill"
+                                data-bs-target="#v-pills-messages" type="button" role="tab"
+                                aria-controls="v-pills-messages" aria-selected="false">House prices</button>
+                        </div>
+                        <div class="tab-content" id="v-pills-tabContent">
+                            <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
+                                aria-labelledby="v-pills-home-tab" tabindex="0"></div>
+                            <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
+                                aria-labelledby="v-pills-profile-tab" tabindex="0"></div>
+                        </div>
+                    </div>
+                    <!-- <p class="p-3 pt-2 sale-active sale"><a>For sale</a></p>
+                    <p class="p-3 pt-2 sale"><a>To rent</a></p>
+                    <p class="p-3 pt-2 sale"><a>House prices</a></p> -->
+                </div>
+                <div class="line"></div>
+                <form class="pt-3 row">
+                    <p class="serach-label">Enter a location</p>
+                    <div class="col-md-10 d-flex form-form">
+                        <input class="form-control col-10" type="search" placeholder="e.g. Oxford or NW3"
+                            aria-label="Search">
+                        <button class="col banner-form d-flex">
+                            <a href="#"><i class="fa-solid fa-magnifying-glass pt-3"></i></a>
+                            <div class="srch-btn">Search</div>
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- property -->
+    <div class="property">
+        <div class="property-container">
+            <div class="property-section col-md-12 d-flex">
+                <div class="col-md-6 text">
+                    <div class="property-text">
+                        <p class="property-title">
+                            Know the facts about a property
+                        </p>
+                        <p class="description">
+                            Uncover nearby planning applications, flood risk, environmental impact, local crime rates,
+                            and much more.
+                        </p>
+                        <div class="pt-4"><a class="property-btn" href="#">Get a Home Check</a></div>
+                    </div>
+                </div>
+                <div class="col-md-6 property-first">
+                    <img src="https://images.ctfassets.net/02vwvgr6spsr/1gDdi9eItl6dm0QLW0wYw5/3fbfddd60b767563f1c701fbf7920fd3/Home-checks.png?q=50&w=1200&fm=avif"
+                        class="only-image" alt="">
+                </div>
+
+            </div>
+            <!-- Home Section -->
+            <div class="home-section ">
+                <div class="home-text col col-md-6 col-lg-6">
+                    <p class="property-title">
+                        Value your home
+                    </p>
+                    <p class="description">
+                        Get an instant online valuation to see what it's worth.
+                    </p>
+                    <a class="home-btn px-3" href="#">Get an instant valuation</a>
+                </div>
+                <div class="home-image col col-md-6 col-lg-6">
+                    <img src="https://images.ctfassets.net/02vwvgr6spsr/7mcnbKzLulJg2JGpPwXlVA/14321f23e1d0d1f3e32d8dc40a773641/Large.png?q=50&w=768&fm=avif"
+                        class="image" alt="">
+                </div>
+            </div>
+
+            <!-- advice section -->
+            <div class="advice-section">
+                <p class="property-title">Looking for facts, figures or property advice?</p>
+                <p class="description">Just ask Zoopla.</p>
+                <div class="swiper-container mySwiper">
+                    <div class="swiper-wrapper scroll">
+                        <div class="swiper-slide">
+                            <div class="cards col card-left">
+                                <div class="card-image">
+                                    <img src="https://images.ctfassets.net/02vwvgr6spsr/4Bwmr5JVPnAjgSYYanyvtp/a868b2197d52df9abfa3323744db8def/3._Oxford_exterior.jpg?w=560&q=50&fm=avif"
+                                        class="property-image" alt="">
+                                </div>
+                                <div class="card-title">
+                                    <p>Will house prices rise in 2024? </p>
+                                </div>
+                                <div class="date">
+                                    <p>19 January 2024 </p>
+                                </div>
+                                <div class="card-description">
+                                    <p>If you’re planning to buy or sell a home in 2024, what should you do? Our
+                                        Executive
+                                        Director of...</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="swiper-slide">
+                            <div class="cards col mobile-card">
+                                <div class="card-image">
+                                    <img src="https://images.ctfassets.net/02vwvgr6spsr/2UW6kpROUYnKeRUoKfgEuo/601d6b9c0d0dfdda7e5b1e5889a343dc/GettyImages-1201844686.jpg?w=560&q=50&fm=avif"
+                                        class="property-image" alt="">
+                                </div>
+                                <div class="card-title">
+                                    <p>Do kids hold the keys? How little ones really feel about moving house</p>
+                                </div>
+                                <div class="date">
+                                    <p>19 January 2024 </p>
+                                </div>
+                                <div class="card-description">
+                                    <p>The most affordable areas to buy a home in the South East</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cards col mobile-card">
+                                <div class="card-image">
+                                    <img src="https://images.ctfassets.net/02vwvgr6spsr/2bz1QjOEUh6uaZMeQq0c5S/a42fdfd7a22b498e9fbabf987ee8a9ab/hastings_by_fietzfotos.jpg?w=560&q=50&fm=avif"
+                                        class="property-image" alt="">
+                                </div>
+                                <div class="card-title">
+                                    <p>The most affordable areas to buy a home in the South East</p>
+                                </div>
+                                <div class="date">
+                                    <p>19 January 2024 </p>
+                                </div>
+                                <div class="card-description">
+                                    <p>Our latest insights reveal how children really feel about moving house - and
+                                        find out how
+                                        to manage the move with kids in tow.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cards col card-left">
+                                <div class="card-image">
+                                    <img src="https://images.ctfassets.net/02vwvgr6spsr/4Bwmr5JVPnAjgSYYanyvtp/a868b2197d52df9abfa3323744db8def/3._Oxford_exterior.jpg?w=560&q=50&fm=avif"
+                                        class="property-image" alt="">
+                                </div>
+                                <div class="card-title">
+                                    <p>Will house prices rise in 2024? </p>
+                                </div>
+                                <div class="date">
+                                    <p>19 January 2024 </p>
+                                </div>
+                                <div class="card-description">
+                                    <p>If you’re planning to buy or sell a home in 2024, what should you do? Our
+                                        Executive
+                                        Director of...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cards col mobile-card">
+                                <div class="card-image">
+                                    <img src="https://images.ctfassets.net/02vwvgr6spsr/2UW6kpROUYnKeRUoKfgEuo/601d6b9c0d0dfdda7e5b1e5889a343dc/GettyImages-1201844686.jpg?w=560&q=50&fm=avif"
+                                        class="property-image" alt="">
+                                </div>
+                                <div class="card-title">
+                                    <p>Do kids hold the keys? How little ones really feel about moving house</p>
+                                </div>
+                                <div class="date">
+                                    <p>19 January 2024 </p>
+                                </div>
+                                <div class="card-description">
+                                    <p>The most affordable areas to buy a home in the South East</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cards col mobile-card">
+                                <div class="card-image">
+                                    <img src="https://images.ctfassets.net/02vwvgr6spsr/2bz1QjOEUh6uaZMeQq0c5S/a42fdfd7a22b498e9fbabf987ee8a9ab/hastings_by_fietzfotos.jpg?w=560&q=50&fm=avif"
+                                        class="property-image" alt="">
+                                </div>
+                                <div class="card-title">
+                                    <p>The most affordable areas to buy a home in the South East</p>
+                                </div>
+                                <div class="date">
+                                    <p>19 January 2024 </p>
+                                </div>
+                                <div class="card-description">
+                                    <p>Our latest insights reveal how children really feel about moving house - and
+                                        find out how
+                                        to manage the move with kids in tow.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cards col mobile-card">
+                                <div class="card-image">
+                                    <img src="https://images.ctfassets.net/02vwvgr6spsr/2bz1QjOEUh6uaZMeQq0c5S/a42fdfd7a22b498e9fbabf987ee8a9ab/hastings_by_fietzfotos.jpg?w=560&q=50&fm=avif"
+                                        class="property-image" alt="">
+                                </div>
+                                <div class="card-title">
+                                    <p>The most affordable areas to buy a home in the South East</p>
+                                </div>
+                                <div class="date">
+                                    <p>19 January 2024 </p>
+                                </div>
+                                <div class="card-description">
+                                    <p>Our latest insights reveal how children really feel about moving house - and
+                                        find out how
+                                        to manage the move with kids in tow.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cards col mobile-card">
+                                <div class="card-image">
+                                    <img src="https://images.ctfassets.net/02vwvgr6spsr/2bz1QjOEUh6uaZMeQq0c5S/a42fdfd7a22b498e9fbabf987ee8a9ab/hastings_by_fietzfotos.jpg?w=560&q=50&fm=avif"
+                                        class="property-image" alt="">
+                                </div>
+                                <div class="card-title">
+                                    <p>The most affordable areas to buy a home in the South East</p>
+                                </div>
+                                <div class="date">
+                                    <p>19 January 2024 </p>
+                                </div>
+                                <div class="card-description">
+                                    <p>Our latest insights reveal how children really feel about moving house - and
+                                        find out how
+                                        to manage the move with kids in tow.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cards col mobile-card">
+                                <div class="card-image">
+                                    <img src="https://images.ctfassets.net/02vwvgr6spsr/2bz1QjOEUh6uaZMeQq0c5S/a42fdfd7a22b498e9fbabf987ee8a9ab/hastings_by_fietzfotos.jpg?w=560&q=50&fm=avif"
+                                        class="property-image" alt="">
+                                </div>
+                                <div class="card-title">
+                                    <p>The most affordable areas to buy a home in the South East</p>
+                                </div>
+                                <div class="date">
+                                    <p>19 January 2024 </p>
+                                </div>
+                                <div class="card-description">
+                                    <p>Our latest insights reveal how children really feel about moving house - and
+                                        find out how
+                                        to manage the move with kids in tow.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+
+                <div class=" pro-btn d-flex justify-content-end ">
+                    <div class=" d-flex justify-content-end desktop-buttons">
+                        <div class="    ">
+                            <a class="icons" type="button" data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide="prev">
+                                <i class="fa-solid fa-arrow-left-long arr-icon disable-arr left"></i>
+                            </a>
+                        </div>
+                        <div>
+                            <a class=" icons" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <i class="fa-solid fa-arrow-right-long arr-icon right-arr"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- city Section -->
+            <div class="city-section">
+                <div class="city-title row justify-content-between align-content-center">
+                    <div class=" col-12 col-md-12 col-lg-4">
+                        <p class="property-title">Discover towns and cities</p>
+                    </div>
+                    <div class="col-md-5 col-lg-3 d-flex buttons">
+                        <button class="city-btn active-class" id="v-pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                            aria-selected="true" onclick="saleText()"><span>For sale</span></button>
+                        <button class="rent-btn" id="v-pills-home-tab" data-bs-toggle="pill"
+                            data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
+                            aria-selected="true" onclick="rentText()"><span>To rent</span></button>
+                        <!-- <p class="city-btn "><a href="" role="tab">For Sale</a></p> -->
+                        <!-- <p class="rent-btn"><a href="" role="tab">To rent</a></p> -->
+                    </div>
+                    <div class="col-md-4 d-flex only-mobile desktop-Explore">
+                        <p class="explore-btn"><a href="#"><a href="#">Explore more town & cities</a></p>
+                    </div>
+                    <div class="arrow-btn d-flex justify-content-end ">
+                        <div class=" row justify-content-end">
+                            <a class="carousel-control-prev " type="button" data-bs-target="#carouselExample"
+                                data-bs-slide="prev">
+                                <i class="fa-solid fa-arrow-left-long left-city disabled-button" ></i>
+                            </a>
+                            <a class="carousel-control-next " type="button" data-bs-target="#carouselExample"
+                                data-bs-slide="next">
+                                <i class="fa-solid fa-arrow-right-long right-city" onclick="left_city()"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- mobile Carusal -->
+                <div id="carouselExample" class="carousel slide mobile-slider" data-bs-touch="true">
+                    <div class="carousel-inner">
+                        <!-- First Slide -->
+                        <div class="carousel-item active mobile-items">
+                            <div class="col-12 col-sm-4 d-flex flex-col">
+                                <div class="city-image me-3">
+                                    <i class="fa-regular fa-building city-i"></i>
+                                </div>
+                                <div class="city-detail ">
+                                    <p class="detail-title">In the city</p>
+                                    <p class="city-description">
+                                        Live among the hustle and bustle
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="d-flex py-3 pb-2  fixed-height">
+                                <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                <p class="explore-btn"><a href="#"><a href="#">London properties <span
+                                                class="changeText">for sale</span></a></p>
+                            </div>
+                            <div class="d-flex py-2  fixed-height">
+                                <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                <p class="explore-btn"><a href="#">Leeds properties <span class="changeText">for
+                                            sale</span></a></p>
+                            </div>
+                            <div class="d-flex py-2  fixed-height">
+                                <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                <p class="explore-btn"><a href="#">Edinburgh properties <span class="changeText">for
+                                            sale</span></a></p>
+                            </div>
+                            <div class="d-flex py-3 pb-2  fixed-height">
+                                <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                <p class="explore-btn"><a href="#">Manchester properties <span class="changeText">for
+                                            sale </span></a></p>
+                            </div>
+                            <div class="d-flex py-2  fixed-height">
+                                <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                <p class="explore-btn"><a href="#">Liverpool properties <span class="changeText">for
+                                            sale </span></a></p>
+                            </div>
+                            <div class="d-flex py-2  fixed-height">
+                                <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                <p class="explore-btn"><a href="#">Cardiff properties <span class="changeText">for
+                                            sale</span></a></p>
+                            </div>
+
+                        </div>
+
+                        <!-- Second Slide -->
+                        <div class="carousel-item mobile-items">
+                            <div class="city-image-a me-3">
+                                <img src="lighthouse.png" class="image-city" alt="">
+                            </div>
+                            <div class="city-detail ">
+                                <p class="detail-title">On the coast</p>
+                                <p class="city-description">
+                                    Wake up to fresh air and sea views
+                                </p>
+                            </div>
+                            <div class="d-flex py-3 pb-2  fixed-height">
+                                <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                <p class="explore-btn"><a href="#">Swansea properties <span class="changeText">for
+                                            sale</span></a></p>
+                            </div>
+                            <div class="d-flex py-2  fixed-height">
+                                <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                <p class="explore-btn"><a href="#">Bristol properties <span class="changeText">for
+                                            sale</span></a> </p>
+                            </div>
+                            <div class="d-flex py-2  fixed-height">
+                                <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                <p class="explore-btn"><a href="#">Hull properties <span class="changeText">for
+                                            sale</span></a> </p>
+                            </div>
+                            <div class="d-flex py-3 pb-2  fixed-height">
+                                <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                <p class="explore-btn"><a href="#">Southampton properties <span class="changeText">for
+                                            sale</span></a></p>
+                            </div>
+                            <div class="d-flex py-2  fixed-height">
+                                <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                <p class="explore-btn"><a href="#">Plymouth properties <span class="changeText">for
+                                            sale</span></a></p>
+                            </div>
+                            <div class="d-flex py-2  fixed-height">
+                                <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                <p class="explore-btn"><a href="#">Dundee properties <span class="changeText">for
+                                            sale</span></a></p>
+                            </div>
+                        </div>
+                        <!-- third Slide -->
+                        <div class="carousel-item mobile-items">
+                            <div class="city-image ha-color me-3">
+                                <i class="fa-solid fa-house house"></i>
+                            </div>
+                            <div class="city-detail ">
+                                <p class="detail-title">Rural and countryside</p>
+                                <p class="city-description">
+                                    Enjoy living close to nature
+                                </p>
+                            </div>
+                            <div class="d-flex py-3 pb-2  fixed-height">
+                                <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                <p class="explore-btn"><a href="#">Leicester properties <span class="changeText">for
+                                            sale</span></a></p>
+                            </div>
+                            <div class="d-flex py-2  fixed-height">
+                                <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                <p class="explore-btn"><a href="#">Northampton properties <span class="changeText">for
+                                            sale</span></a> </p>
+                            </div>
+                            <div class="d-flex py-2  fixed-height">
+                                <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                <p class="explore-btn"><a href="#">Kent properties <span class="changeText">for
+                                            sale</span></a> </p>
+                            </div>
+                            <div class="d-flex py-3 pb-2  fixed-height">
+                                <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                <p class="explore-btn"><a href="#">Cornwall properties <span class="changeText">for
+                                            sale</span></a></p>
+                            </div>
+                            <div class="d-flex py-2  fixed-height">
+                                <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                <p class="explore-btn"><a href="#">Essex properties <span class="changeText">for
+                                            sale</span></a> </p>
+                            </div>
+                            <div class="d-flex py-2  fixed-height">
+                                <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                <p class="explore-btn"><a href="#">Devon properties <span class="changeText">for
+                                            sale</span></a> </p>
+                            </div>
+                        </div>
+                        <!-- Fourth Slide -->
+                        <div class="carousel-item mobile-items">
+                            <div class="city-image tower-col me-3">
+                                <i class="fa-solid fa-tower-observation "></i>
+                            </div>
+                            <div class="city-detail ">
+                                <p class="detail-title">Popular locations</p>
+                                <p class="city-description">
+                                    Move to a property hotspot
+                                </p>
+                                <p class="explore-btn"><a href="#">See all UK properties <span class="changeText">for
+                                            sale</span></a> </p>
+                            </div>
+                            <div class="d-flex py-3 pb-2  fixed-height">
+                                <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                <p class="explore-btn"><a href="#">Glasgow properties <span class="changeText">for
+                                            sale</span></a> </p>
+                            </div>
+                            <div class="d-flex py-2  fixed-height">
+                                <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                <p class="explore-btn"><a href="#">Birmingham properties <span class="changeText">for
+                                            sale</span></a> </p>
+                            </div>
+                            <div class="d-flex py-2  fixed-height">
+                                <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                <p class="explore-btn"><a href="#">Nottingham properties <span class="changeText">for
+                                            sale</span></a> </p>
+                            </div>
+                            <div class="d-flex py-3 pb-2  fixed-height">
+                                <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                <p class="explore-btn"><a href="#">Sheffield properties <span class="changeText">for
+                                            sale</span></a></p>
+                            </div>
+                            <div class="d-flex py-2  fixed-height">
+                                <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                <p class="explore-btn"><a href="#">Coventry properties <span class="changeText">for
+                                            sale</span></a> </p>
+                            </div>
+                            <div class="d-flex py-2  fixed-height">
+                                <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                <p class="explore-btn"><a href="#">Stoke-on-Trent properties <span
+                                            class="changeText">for sale</span></a></p>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-md-4 d-flex only-mobile">
+                        <p class="explore-btn"><a href="#"><a href="#">Explore more town & cities</a></p>
+                    </div>
+                </div>
+
+                <!-- first Card -->
+                <div class="city-card first-card row desktop-carusal col-12">
+                    <div class="col-12 col-sm-4 d-flex flex-col">
+                        <div class="city-image me-3">
+                            <i class="fa-regular fa-building city-i"></i>
+                        </div>
+                        <div class="city-detail ">
+                            <p class="detail-title">In the city</p>
+                            <p class="city-description">
+                                Live among the hustle and bustle
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <div class="d-flex py-3 pb-2  fixed-height">
+                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                            <p class="explore-btn"><a href="#"><a href="#">London properties <span
+                                            class="changeText">for sale</span></a></p>
+                        </div>
+                        <div class="d-flex py-2  fixed-height">
+                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                            <p class="explore-btn"><a href="#">Leeds properties <span class="changeText">for
+                                        sale</span></a></p>
+                        </div>
+                        <div class="d-flex py-2  fixed-height">
+                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                            <p class="explore-btn"><a href="#">Edinburgh properties <span class="changeText">for
+                                        sale</span></a></p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <div class="d-flex py-3 pb-2  fixed-height">
+                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                            <p class="explore-btn"><a href="#">Manchester properties  <span class="changeText"> for sale
+                                    </span></a></p>
+                        </div>
+                        <div class="d-flex py-2  fixed-height">
+                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                            <p class="explore-btn"><a href="#">Liverpool properties <span class="changeText"> for
+                                        sale</span> </a></p>
+                        </div>
+                        <div class="d-flex py-2  fixed-height">
+                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                            <p class="explore-btn"><a href="#">Cardiff properties <span class="changeText"> for
+                                        sale</span></a></p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- Second-card -->
+                <div class="city-card row none desktop-carusal col-12">
+                    <div class="col-12 col-sm-4 d-flex flex-col">
+                        <div class="city-image-a me-3">
+                            <img src="lighthouse.png" class="image-city" alt="">
+                        </div>
+                        <div class="city-detail ">
+                            <p class="detail-title">On the coast</p>
+                            <p class="city-description">
+                                Wake up to fresh air and sea views
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <div class="d-flex py-3 pb-2  fixed-height">
+                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                            <p class="explore-btn"><a href="#">Swansea properties <span class="changeText">for
+                                        sale</span></a></p>
+                        </div>
+                        <div class="d-flex py-2  fixed-height">
+                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                            <p class="explore-btn"><a href="#">Bristol properties <span class="changeText">for
+                                        sale</span></a> </p>
+                        </div>
+                        <div class="d-flex py-2  fixed-height">
+                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                            <p class="explore-btn"><a href="#">Hull properties <span class="changeText">for
+                                        sale</span></a> </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <div class="d-flex py-3 pb-2  fixed-height">
+                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                            <p class="explore-btn"><a href="#">Southampton properties <span class="changeText">for
+                                        sale</span></a></p>
+                        </div>
+                        <div class="d-flex py-2  fixed-height">
+                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                            <p class="explore-btn"><a href="#">Plymouth properties <span class="changeText">for
+                                        sale</span></a></p>
+                        </div>
+                        <div class="d-flex py-2  fixed-height">
+                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                            <p class="explore-btn"><a href="#">Dundee properties <span class="changeText">for
+                                        sale</span></a></p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- third Card -->
+                <div class="city-card row desktop-carusal col-12">
+                    <div class="col-12 col-sm-4 d-flex flex-col">
+                        <div class="city-image ha-color me-3">
+                            <i class="fa-solid fa-house house"></i>
+                        </div>
+                        <div class="city-detail ">
+                            <p class="detail-title">Rural and countryside</p>
+                            <p class="city-description">
+                                Enjoy living close to nature
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <div class="d-flex py-3 pb-2  fixed-height">
+                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                            <p class="explore-btn"><a href="#">Leicester properties <span class="changeText">for
+                                        sale</span></a></p>
+                        </div>
+                        <div class="d-flex py-2  fixed-height">
+                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                            <p class="explore-btn"><a href="#">Northampton properties <span class="changeText">for
+                                        sale</span> </a> </p>
+                        </div>
+                        <div class="d-flex py-2  fixed-height">
+                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                            <p class="explore-btn"><a href="#">Kent properties <span class="changeText">for sale
+                                    </span></a> </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <div class="d-flex py-3 pb-2  fixed-height">
+                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                            <p class="explore-btn"><a href="#">Cornwall properties <span class="changeText">for sale
+                                    </span></a></p>
+                        </div>
+                        <div class="d-flex py-2  fixed-height">
+                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                            <p class="explore-btn"><a href="#">Essex properties <span class="changeText">for sale
+                                    </span></a> </p>
+                        </div>
+                        <div class="d-flex py-2  fixed-height">
+                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                            <p class="explore-btn"><a href="#">Devon properties <span class="changeText">for
+                                        sale</span></a> </p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Fourth Card -->
+                <div class="city-card row desktop-carusal col-12">
+                    <div class="col-12 col-sm-4 d-flex flex-col">
+                        <div class="city-image tower-col me-3">
+                            <i class="fa-solid fa-tower-observation "></i>
+                        </div>
+                        <div class="city-detail ">
+                            <p class="detail-title">Popular locations</p>
+                            <p class="city-description">
+                                Move to a property hotspot
+                            </p>
+                            <p class="explore-btn"><a href="#">See all UK properties <span class="changeText">for
+                                        sale</span></a> </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <div class="d-flex py-3 pb-2  fixed-height">
+                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                            <p class="explore-btn"><a href="#">Glasgow properties <span class="changeText">for sale
+                                    </span></a> </p>
+                        </div>
+                        <div class="d-flex py-2  fixed-height">
+                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                            <p class="explore-btn"><a href="#">Birmingham properties <span class="changeText">for
+                                        sale</span></a> </p>
+                        </div>
+                        <div class="d-flex py-2  fixed-height">
+                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                            <p class="explore-btn"><a href="#">Nottingham properties <span class="changeText">for
+                                        sale</span></a> </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4">
+                        <div class="d-flex py-3 pb-2  fixed-height">
+                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                            <p class="explore-btn"><a href="#">Sheffield properties <span class="changeText">for
+                                        sale</span></a></p>
+                        </div>
+                        <div class="d-flex py-2  fixed-height">
+                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                            <p class="explore-btn"><a href="#">Coventry properties <span class="changeText">for
+                                        sale</span></a> </p>
+                        </div>
+                        <div class="d-flex py-2  fixed-height">
+                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                            <p class="explore-btn"><a href="#">Stoke-on-Trent properties <span class="changeText">for
+                                        sale</span></a></p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- tablet Carusal -->
+                <div id="carouselExampleAutoplaying" class="carousel slide tablet-carousel" data-interval="false">
+                    <div class="carousel-inner tablet-carousel">
+                        <div class="arrow-btn d-flex justify-content-end">
+                            <div class="row justify-content-end position-relative tablet-buttons">
+                                <button class="carousel-control-prev carousel-control" type="button"
+                                    data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                                    <i class="fa-solid fa-arrow-left tablet-left disabled-button" onclick="get_first()"
+                                        disabled></i>
+                                </button>
+                                <button class="carousel-control-next carousel-control" type="button"
+                                    data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                                    <i class="fa-solid fa-arrow-right tablet-right" onclick="get_last()"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="carousel-item active mobile-item">
+
+                            <div class="two-card row justify-content-between">
+                                <div class="col tablet-carusal">
+                                    <div class=" d-flex flex-col">
+                                        <div class="city-image me-3">
+                                            <i class="fa-regular fa-building city-i"></i>
+                                        </div>
+                                        <div class="city-detail ">
+                                            <p class="detail-title">In the city</p>
+                                            <p class="city-description">
+                                                Live among the hustle and bustle
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="d-flex py-3 pb-2  fixed-height">
+                                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                            <p class="explore-btn"><a href="#">London properties <span
+                                                        class="changeText">for
+                                                        sale</span></a></p>
+                                        </div>
+                                        <div class="d-flex py-2  fixed-height">
+                                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                            <p class="explore-btn"><a href="#">Leeds properties <span
+                                                        class="changeText">for sale </span></a></p>
+                                        </div>
+                                        <div class="d-flex py-2  fixed-height">
+                                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                            <p class="explore-btn"><a href="#">Edinburgh properties <span
+                                                        class="changeText">for sale</span></a></p>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="d-flex py-3 pb-2  fixed-height">
+                                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                            <p class="explore-btn"><a href="#">Manchester properties <span
+                                                        class="changeText">for sale </span></a>
+                                            </p>
+                                        </div>
+                                        <div class="d-flex py-2  fixed-height">
+                                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                            <p class="explore-btn"><a href="#">Liverpool properties <span
+                                                        class="changeText">for sale </span></a>
+                                            </p>
+                                        </div>
+                                        <div class="d-flex py-2  fixed-height">
+                                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                            <p class="explore-btn"><a href="#">Cardiff properties <span
+                                                        class="changeText">for sale</span></a></p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="col tablet-carusal">
+                                    <div class="d-flex flex-col">
+                                        <div class="city-image-a me-3">
+                                            <img src="lighthouse.png" class="image-city" alt="">
+                                        </div>
+                                        <div class="city-detail ">
+                                            <p class="detail-title">On the coast</p>
+                                            <p class="city-description">
+                                                Wake up to fresh air and sea views
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="d-flex py-3 pb-2  fixed-height">
+                                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                            <p class="explore-btn"><a href="#">Swansea properties <span
+                                                        class="changeText">for sale</span></a></p>
+                                        </div>
+                                        <div class="d-flex py-2  fixed-height">
+                                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                            <p class="explore-btn"><a href="#">Bristol properties <span
+                                                        class="changeText">for sale</span></a> </p>
+                                        </div>
+                                        <div class="d-flex py-2  fixed-height">
+                                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                            <p class="explore-btn"><a href="#">Hull properties <span
+                                                        class="changeText">for sale</span></a> </p>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="d-flex py-3 pb-2  fixed-height">
+                                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                            <p class="explore-btn"><a href="#">Southampton properties <span
+                                                        class="changeText">for sale</span></a>
+                                            </p>
+                                        </div>
+                                        <div class="d-flex py-2  fixed-height">
+                                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                            <p class="explore-btn"><a href="#">Plymouth properties <span
+                                                        class="changeText">for sale </span></a></p>
+                                        </div>
+                                        <div class="d-flex py-2  fixed-height">
+                                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                            <p class="explore-btn"><a href="#">Dundee properties <span
+                                                        class="changeText">for sale </span></a></p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="carousel-item mobile-item">
+                            <div class="two-card row justify-content-between">
+                                <div class="col tablet-carusal">
+                                    <div class=" d-flex flex-col">
+                                        <div class="city-image ha-color me-3">
+                                            <i class="fa-solid fa-house house"></i>
+                                        </div>
+                                        <div class="city-detail ">
+                                            <p class="detail-title">Rural and countryside</p>
+                                            <p class="city-description">
+                                                Enjoy living close to nature
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="d-flex py-3 pb-2  fixed-height">
+                                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                            <p class="explore-btn"><a href="#">Leicester properties <span
+                                                        class="changeText">for sale</span></a></p>
+                                        </div>
+                                        <div class="d-flex py-2  fixed-height">
+                                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                            <p class="explore-btn"><a href="#">Northampton properties <span
+                                                        class="changeText">for sale</span> </a>
+                                            </p>
+                                        </div>
+                                        <div class="d-flex py-2  fixed-height">
+                                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                            <p class="explore-btn"><a href="#">Kent properties <span
+                                                        class="changeText">for sale</span></a> </p>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="d-flex py-3 pb-2  fixed-height">
+                                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                            <p class="explore-btn"><a href="#">Cornwall properties <span
+                                                        class="changeText">for sale</span></a></p>
+                                        </div>
+                                        <div class="d-flex py-2  fixed-height">
+                                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                            <p class="explore-btn"><a href="#">Essex properties <span
+                                                        class="changeText">for sale</span> </a> </p>
+                                        </div>
+                                        <div class="d-flex py-2  fixed-height">
+                                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                            <p class="explore-btn"><a href="#">Devon properties <span
+                                                        class="changeText">for sale</span></a> </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="col tablet-carusal">
+                                    <div class="d-flex flex-col">
+                                        <div class="city-image tower-col me-3">
+                                            <i class="fa-solid fa-tower-observation "></i>
+                                        </div>
+                                        <div class="city-detail ">
+                                            <p class="detail-title">Popular locations</p>
+                                            <p class="city-description">
+                                                Move to a property hotspot
+                                            </p>
+                                            <p class="explore-btn"><a href="#">See all UK properties <span
+                                                        class="changeText">for sale</span></a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="d-flex py-3 pb-2  fixed-height">
+                                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                            <p class="explore-btn"><a href="#">Glasgow properties <span
+                                                        class="changeText">for sale</span></a> </p>
+                                        </div>
+                                        <div class="d-flex py-2  fixed-height">
+                                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                            <p class="explore-btn"><a href="#">Birmingham properties <span
+                                                        class="changeText">for sale</span></a>
+                                            </p>
+                                        </div>
+                                        <div class="d-flex py-2  fixed-height">
+                                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                            <p class="explore-btn"><a href="#">Nottingham properties <span
+                                                        class="changeText">for sale</span></a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="">
+                                        <div class="d-flex py-3 pb-2  fixed-height">
+                                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                            <p class="explore-btn"><a href="#">Sheffield properties <span
+                                                        class="changeText">for sale</span></a></p>
+                                        </div>
+                                        <div class="d-flex py-2  fixed-height">
+                                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                            <p class="explore-btn"><a href="#">Coventry properties <span
+                                                        class="changeText">for sale</span></a> </p>
+                                        </div>
+                                        <div class="d-flex py-2  fixed-height">
+                                            <i class="fa-regular fa-arrow-right-long pt-2 pe-3"></i>
+                                            <p class="explore-btn"><a href="#">Stoke-on-Trent properties <span
+                                                        class="changeText">for sale</span></a></p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Footer-section -->
+        <div class="footer ">
+            <div class="footer-container">
+                <div class="city-card footer-card row">
+                    <div class="col-sm-3 pt-4 foot-card">
+                        <p class="common-title">
+                            <a href="#">For sale</a>
+                        </p>
+                        <p> <a href="#" class="foot-link">New homes</a> </p>
+                        <p> <a href="#" class="foot-link">Commercial properties for sale</a> </p>
+                        <p> <a href="#" class="foot-link"> Overseas </a> </p>
+                        <p> <a href="#" class="foot-link">Find estate agents</a></p>
+                        <p> <a href="#" class="foot-link">Travel time search </a> </p>
+                    </div>
+                    <div class="col-sm-3 pt-4 foot-card">
+                        <p class="common-title">
+                            <a href="#"> To rent </a>
+                        </p>
+                        <p> <a href="#" class="foot-link">Commercial properties to rent </a> </p>
+                        <p> <a href="#" class="foot-link">Find letting agents </a> </p>
+                    </div>
+                    <div class="col-sm-3 pt-4 foot-card">
+                        <p class="common-title">
+                            <a href="#"> Research </a>
+                        </p>
+                        <p> <a href="#" class="foot-link">Shared Ownership</a> </p>
+                        <p> <a href="#" class="foot-link">Guides</a> </p>
+                        <p> <a href="#" class="foot-link">Mortgage calculator</a></p>
+                    </div>
+                    <div class="col-sm-3 pt-4 foot-card last">
+                        <p class="common-title">
+                            <a href="#"> Zoopla for business </a>
+                        </p>
+                        <p> <a href="#" class="foot-link">List with Zoopla </a> </p>
+                        <p> <a href="#" class="foot-link">ZooplaPro </a> </p>
+                        <p> <a href="#" class="foot-link">Alto Software</a> </p>
+                    </div>
+                </div>
+                <div class="footer-responsive">
+                    <div class="footer-nav d-flex flex-col col col-md-12 col-lg-7">
+                        <div class="col col-md-11 col-lg d-flex justify-content-between links">
+                            <p class="footer-nav-links"> <a href="#">Privacy</a> </p>
+                            <p class="footer-nav-links"> <a href="#">Cookies </a> </p>
+                            <p class="footer-nav-links"> <a href="#">Contact us</a> </p>
+                            <p class="footer-nav-links"> <a href="#">About Zoopla</a> </p>
+                            <p class="footer-nav-links"> <a href="#">Careers </a> </p>
+                            <p class="footer-nav-links"> <a href="#">Display advertising</a> </p>
+                            <p class="footer-nav-links"> <a href="#">Sitemap</a> </p>
+                        </div>
+                        <div class=" col col-md-8 col-lg-9 d-flex justify-content-between links last">
+                            <p class="footer-nav-links"> <a href="#">Terms </a> </p>
+                            <p class="footer-nav-links"> <a href="#">Member terms </a> </p>
+                            <p class="footer-nav-links"> <a href="#">Slavery statement</a> </p>
+                            <p class="footer-nav-links"> <a href="#">Tax strategy</a> </p>
+                            <p class="footer-nav-links"> <a href="#">Press</a> </p>
+                        </div>
+
+                    </div>
+                    <div class="footer-card-icon flex-col col col-md-12 col-lg-5">
+                        <div class="col col-md-12 col-lg d-flex mobile-icon">
+                            <div class="col-6 col-md-10 d-flex footer-icon ">
+                                <p> <a href="#"><i class="fa-brands fa-facebook footer-icon"></i></a> </p>
+                                <p> <a href="#"><i class="fa-brands fa-x-twitter footer-icon"></i></a> </p>
+                                <p> <a href="#"><i class="fa-brands fa-linkedin footer-icon"></i> </a></p>
+                                <p> <a href="#"><i class="fa-brands fa-instagram footer-icon"></i></a> </p>
+                                <p> <a href="#"><i class="fa-brands fa-youtube footer-icon"></i></a> </p>
+                                <p> <a href="#"><i class="fa-brands fa-pinterest footer-icon"></i> </a></p>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-lg d-flex">
+                            <div class="col-12 col-md-12  d-flex copyright-text">
+                                <p class="company-text"> &copy; 2024 Zoopla Limited. All rights reserved.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <p class="footer-text">
+                    Sold house prices provided by Land Registry/Registers of Scotland. © Crown copyright 2024. Our
+                    website
+                    is
+                    completely free for you to use but we may receive a commission from some of the companies we link to
+                    on
+                    the
+                    site.
+                </p>
+                <p class="footer-text">
+                    Zoopla Limited is an appointed representative of Uswitch Limited which is authorised and regulated
+                    by
+                    the
+                    Financial Conduct Authority (FRN 312850) to provide the mortgage calculator tool and incorporated
+                    with
+                    company registration number 06074771 and registered office at The Cooperage, 5 Copper Row, London
+                    SE1
+                    2LH.
+                    Uswitch Limited is authorised and regulated by the Financial Conduct Authority (FCA) under firm
+                    reference
+                    number 312850.
+                </p>
+                <p class="footer-text">
+                    Zoopla.co.uk is not a mortgage intermediary and makes introductions to Mojo Mortgages to provide
+                    mortgage
+                    solutions. Zoopla.co.uk and Mojo Mortgages are part of the same group of companies. Zoopla may
+                    receive
+                    an
+                    introduction fee from Mojo Mortgages on completion of successful mortgage applications. This fee is
+                    based on
+                    a percentage of your loan amount. Mojo is a trading style of Life's Great Limited which is
+                    registered in
+                    England and Wales (06246376) and is authorised and regulated by the Financial Conduct Authority and
+                    is
+                    on
+                    the Financial Services Register (478215). Mojo's registered office is The Cooperage, 5 Copper Row,
+                    London,
+                    SE1 2LH. To contact Mojo by phone, please call 0333 123 0012.
+                </p>
+            </div>
+        </div>
+
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                
+                freeMode: true,
+                navigation: {
+                    nextEl: '.right-arr',
+                    prevEl: '.left',
+                },
+                breakpoints: {
+                    540:{
+                        slidesPerView: 1.2,
+                        spaceBetween: 20,
+                        slidesPerGroup: 1,
+                    },
+                    576: {
+                        slidesPerView: 2.2,
+                        spaceBetween: 20,
+                        slidesPerGroup: 1,
+                    },
+                    768: {
+                        slidesPerView: 2.2,
+                        spaceBetween: 20,
+                        slidesPerGroup: 2,
+                    },
+                    992: {
+                        slidesPerView: 3,
+                        spaceBetween: 25,
+                        slidesPerGroup: 3,
+                    }
+                }
+            });
+
+            // Add event listener for slide change
+            swiper.on('slideChange', function () {
+
+                // Check if it's the last slide
+                if (swiper.isEnd) {
+
+                    // alert("As")
+                    // Disable the next button and change its color and border
+                    document.querySelector('.right-arr').classList.add('disable-arr');
+                    document.querySelector('.right-arr').style.color = 'gray';
+                } else {
+                    // Enable the next button and reset its (execute when we click next button)
+                    // alert("as");
+                    document.querySelector('.left').style.margin = "0px 5px 0px 0px";
+                    document.querySelector('.right-arr').classList.remove('disable-arr');
+                    document.querySelector('.right-arr').style.borderColor = 'gray';
+                    document.querySelector('.right-arr').style.color = 'black';
+                }
+
+                // Check if it's the first slide
+                if (swiper.isBeginning) {
+
+                    // Disable the previous button and change its color and border
+                    document.querySelector('.left').classList.add('disable-arr');
+
+                } else {
+                    // Enable the previous button and reset its styles
+                    document.querySelector('.right-arr').style.margin = '0px 0px 0px 5px';
+                    document.querySelector('.left').classList.remove('disable-arr');
+                    document.querySelector('.right-arr').classList.add('margin-right');
+                }
+            });
+        </script>
+
+</body>
+
+</html>
